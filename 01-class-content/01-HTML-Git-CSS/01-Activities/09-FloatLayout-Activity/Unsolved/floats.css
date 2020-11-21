@@ -53,11 +53,15 @@ section {
   width: 100%;
   padding: 20px;
   margin-bottom: 20px;
-  height: 300px;
   padding: 20px;
+  overflow: auto;
+  clear: both;
 }
 
 #division {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #6ea6da;
   
 }
 
@@ -65,7 +69,7 @@ aside {
   float: left;
   background-color: #a6b747;
   border: 1px solid #eee;
-  width: 33.3%;
+  width: 33%;
   height: 200px;
   padding: 20px;
   margin-left: 30px;
