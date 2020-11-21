@@ -1,0 +1,17 @@
+header, section, aside, footer {
+    border: 1px solid orange;
+}
+
+section {
+    float: left;
+}
+
+aside {
+    float:right;
+}
+
+.wrapper::after {
+    clear: both;
+    display: block;
+    content: " ";
+}
