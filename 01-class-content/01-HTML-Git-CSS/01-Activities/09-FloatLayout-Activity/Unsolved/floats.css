@@ -8,9 +8,17 @@
 
 }
 
+#left, #middle, #right, section, #division, aside {
+  color: #ffff;
+}
+
+#left, #middle, #right {
+  width: 33.3%;
+}
+
 body {
-  background: gray;
-  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 header {
@@ -21,43 +29,50 @@ header {
 }
 
 section {
-  float: left;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 #left {
   background-color: #30948d;
-  width: 33%;
+  float: left;  
 }
 
 #middle {
-  width: 33%;
+  background-color: #9e1212;
+  float: left;
 }
 
 #right {
-  width: 33%;
+  background-color: #30948d;
+  float: left;
 }
 
 #full {
+  background-color: #394549;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 300px;
+  padding: 20px;
 }
 
 #division {
-  background-color: #6ea3da;
+  
 }
 
 aside {
-  background: #a6b747;
-  width: 300px;
-  height: 400px;
-  padding: 10px;
-  border: 1px solid white;
+  float: left;
+  background-color: #a6b747;
+  border: 1px solid #eee;
+  width: 33.3%;
+  height: 200px;
+  padding: 20px;
+  margin-left: 30px;
 }
 
 footer {
-  background: #FFA500;
-}
-
-.clearfix::after {
-  content: " ";
-  display: block;
+  padding: 20px;
   clear: both;
+  background-color: #ffa500;
 }
