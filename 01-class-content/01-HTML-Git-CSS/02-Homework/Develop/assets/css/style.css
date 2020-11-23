@@ -4,9 +4,20 @@
     margin: 0;
 }
 
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
 body {
     background-color: #d9dcd6;
 }
+
+/*The following css class sets the header*/
 
 .header {
     padding: 20px;
@@ -41,16 +52,9 @@ body {
     margin-left: 25px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
+/*The following css command affects the background image.*/
 
-p {
-    font-size: 16px;
-}
-
-.hero {
+.background-image {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -58,6 +62,8 @@ p {
     background-size: cover;
     background-position: center;
 }
+
+/*These classes set the float direction and margins*/
 
 .float-left {
     float: left;
@@ -69,11 +75,39 @@ p {
     margin-left: 25px;
 }
 
+/*This class is for the general content section*/
+
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+
+/*This class sets the box of the paragraphs*/
+
+.content div {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/*This class sets the height of the three logos to be the same*/
+
+.content img {
+    max-height: 200px;
+}
+
+/*This class sets information for the h2 of each of the information paragraphs*/
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/*This class sets the base setting and color for the side panel*/
 
 .benefits {
     margin-right: 20px;
@@ -86,107 +120,29 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/*These classes set the margin and color for the side panel*/
+
+.benefits div {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+/*These classes set the bottom margin and text align for the side panel*/
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+/*Image classes for the side panel*/
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+/*This class is for the footer of the document*/
 
 .footer {
     padding: 30px;
