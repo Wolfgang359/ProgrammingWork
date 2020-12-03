@@ -1,0 +1,12 @@
+/*
+font-family: 'Big Shoulders Stencil Display', cursive;
+font-family: 'Goldman', cursive;
+*/
+
+.nav-link.dropdown-toggle {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+#logo {
+    color: yellow;
+}
