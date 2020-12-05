@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+
+    <h1>Let's play Rock, Paper, Scissors!</h1>
+
+    <script>
+        myArr = ["Rock", "Paper", "Scissors"];
+        var wins = 0
+        var loss = 0
+        var tie = 0
+
+        for (var i = 0; i < 20; i++) {
+
+            var answer = prompt("Choose Rock, Paper, Scissors");
+
+            var enemy = myArr[Math.floor(Math.random() * myArr.length)];
+
+            if (answer === "Rock" && enemy === "Rock") {
+                alert("Computer chose Rock. You have tied!")
+            }
+            if (answer === "Rock" && enemy === "Paper") {
+                alert("Computer chose Paper. You have lost!")
+            }
+            if (answer === "Rock" && enemy === "Scissors") {
+                alert("Computer chose Scissors. You have won!!")
+            }
+
+            if (answer === "Paper" && enemy === "Rock") {
+                alert("Computer chose Rock. You have won!!")
+            }
+            if (answer === "Paper" && enemy === "Paper") {
+                alert("Computer chose Paper. You have tied!")
+            }
+            if (answer === "Paper" && enemy === "Scissors") {
+                alert("Computer chose Scissors. You have lost!")
+            }
+
+            if (answer === "Scissors" && enemy === "Rock") {
+                alert("Computer chose Rock. You have lost!")
+            }
+            if (answer === "Scissors" && enemy === "Paper") {
+                alert("Computer chose Paper. You have won!!")
+            }
+            if (answer === "Scissors" && enemy === "Scissors") {
+                alert("Computer chose Scissors. You have tied!")
+            }
+
+        console.log(answer)
+        console.log(enemy)
+
+        }
+    </script>
+
+
+</body>
+
+</html>
