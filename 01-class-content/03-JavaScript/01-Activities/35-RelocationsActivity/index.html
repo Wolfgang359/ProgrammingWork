@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relocations</title>
+</head>
+
+<body>
+
+    <h1 id="OPERATING-SYSTEM"></h1>
+    <h1 id="LOCATION"></h1>
+
+    <button id="button" onclick=success.buttonpress()>
+        Hello World
+    </button>
+
+    <script>
+
+        function operatingSystem() {
+            var OS = "unknown OS"
+            if (navigator.appVersion.indexOf("Win") != -1) OS = "Windows";
+            if (navigator.appVersion.indexOf("Mac") != -1) OS = "MacOS";
+            if (navigator.appVersion.indexOf("X11") != -1) OS = "UNIX";
+            if (navigator.appVersion.indexOf("Linux") != -1) OS = "Linux";
+
+            document.getElementById("OPERATING-SYSTEM").innerHTML = OS;
+        }
+
+        window.operatingSystem();
+
+
+        var options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+        };
+
+        button.onclick = function () {
+            buttonpress();
+        }
+        function success(pos) {
+            var crd = pos.coords;
+
+            console.log('Your current position is:');
+            console.log(`Latitude : ${crd.latitude}`);
+            console.log(`Longitude: ${crd.longitude}`);
+            console.log(`More or less ${crd.accuracy} meters.`);
+            var position = pos.coords;
+            document.getElementById("LOCATION").innerHTML = "Your coordinates are as follows: Latitude=" + crd.latitude + " Longitude=" + crd.longitude;
+        }
+
+        function buttonpress() {
+            if (crd.longitude < -77.75888) {
+                window.location.href = "WesternHalf.html";
+            } else if (crd.longitude > -77.75888) {
+                window.location.href = "EasternHalf.html";
+            } else {
+                alert("What the heck, user?")
+            }
+        }
+
+        function error(err) {
+            console.warn(`ERROR(${err.code}): ${err.message}`);
+        }
+
+        navigator.geolocation.getCurrentPosition(success, error, options);
+
+
+
+    </script>
+</body>
+
+</html>

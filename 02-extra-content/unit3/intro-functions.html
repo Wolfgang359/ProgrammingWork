@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Functions</title>
+</head>
+<body>
+    
+    <script>
+        function consoleArrays(arr, msg) {
+            for(var i = 0; i < arr.length; i++) {
+                console.log(`${msg} ${arr[i]}`);
+            }
+        }
+
+        var teams = ['Rockets', 'Texans', 'Astros', 'Skeeters', 'Dynamo'];
+        var food = ['Pizza', 'Bar-B-Que', 'Tacos', 'Wings'];
+        var characters = ['Harry Potter', 'Spiderman', 'Darth Vader', 'Homer Simpson'];
+
+        // console.log(`Teams are ${teams[0]}`);
+        // console.log(`Teams are ${teams[1]}`);
+        // console.log(`Teams are ${teams[2]}`);
+        // console.log(`Teams are ${teams[3]}`);
+        // console.log(`Teams are ${teams[4]}`);
+
+        // console.log(`Food is ${food[0]}`);
+        // console.log(`Food is ${food[1]}`);
+        // console.log(`Food is ${food[2]}`);
+        // console.log(`Food is ${food[3]}`);
+
+        // console.log(`Characters are ${characters[0]}`);
+        // console.log(`Characters are ${characters[1]}`);
+        // console.log(`Characters are ${characters[2]}`);
+        // console.log(`Characters are ${characters[3]}`);
+
+        consoleArrays(teams, 'Teams are');
+        consoleArrays(food, 'Food is');
+        consoleArrays(characters, 'Characters are');
+    </script>
+</body>
+</html>

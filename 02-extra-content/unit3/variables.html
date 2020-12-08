@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        var name = "Tom Riddle"; // String
+        var horcruxes = 7; // number
+        var money = 10.0; // number / float
+        var alive = false; // boolean - True/False
+        var house = "Slytherin"; // String
+        var age = 1999 - 1942; // Number
+
+        console.log(age);
+        console.log("I am Lord Voldemort");
+        console.log(horcruxes, alive);
+        console.group("Hogwarts House");
+            console.log(house);
+            console.log("Gryffindor");
+        console.groupEnd();
+
+        // console.error("I AM AN ERROR");
+
+        alert('Alerts are really annoying. There has to be a better way');
+        var yourName = prompt('What is your name?');
+        var yourAge = prompt('What is your age?');
+        console.log(typeof yourAge);
+        var pizza = confirm('Do you like pizza?');
+        console.log(yourName);
+        console.log(yourAge);
+        console.log(pizza);
+
+        var characters = ["Hermione", "Harry", "Hagrid", "Dobby", "Hedwig"];
+        console.log(characters[0]);
+        console.log(characters[4]);
+        console.log(characters[10]);
+        console.log(characters.length);
+        console.log(characters.join(""));
+        console.log(characters);
+    </script>
+</body>
+</html>
