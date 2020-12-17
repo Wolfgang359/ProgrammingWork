@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greatest Output</title>
+</head>
+<body>
+
+    <h1>This is your output!</h1>
+
+    <p id="output"> </p>
+
+    <script>
+
+        var num1 = prompt("Type a number.");
+        var RealNum1 = parseInt(num1);
+        var num2 = prompt("Type another number.");
+        var RealNum2 = parseInt(num2);
+        var num3 = prompt("Type yet another number.");
+        var RealNum3 = parseInt(num3);
+        var num4 = prompt("Type your final number.");
+        var RealNum4 = parseInt(num4);
+
+        var output = document.getElementById("output");
+
+        var myArr = [RealNum1, RealNum2, RealNum3, RealNum4];
+
+        console.log(myArr);
+
+        if (RealNum1 >= RealNum2 && RealNum1 >= RealNum3 && RealNum1 >= RealNum4) {
+            output.innerHTML = RealNum1;
+        };
+        if (RealNum2 > RealNum1 && RealNum2 > RealNum3 && RealNum2 > RealNum4) {
+            output.innerHTML = RealNum2;
+        };
+        if (RealNum3 > RealNum1 && RealNum3 > RealNum2 && RealNum3 > RealNum4) {
+            output.innerHTML = RealNum3;
+        };
+        if (RealNum4 > RealNum1 && RealNum4 > RealNum2 && RealNum4 > RealNum3) {
+            output.innerHTML = RealNum4;
+        };
+
+    </script>
+</body>
+</html>
