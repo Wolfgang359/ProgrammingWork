@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // PURE FUNCTIONS
+        // 1. Functions should do 1 thing and do it well (like Holdor)
+        // 2. Functions should return the same value given the same arguments
+        // 3. Functions should not have side effects
+        var PI = 3.14;
+
+        function area(radius) {
+            return PI * (radius ^ 2);
+        }
+
+        function areaPure(pi, radius) {
+            return pi * (radius ^ 2);
+        }
+
+        console.log(area(2));
+        PI = 4.65;
+        console.log(area(2));
+
+
+        console.log(areaPure(PI, 2));
+        console.log(areaPure(PI, 2));
+    </script>
+</body>
+</html>
