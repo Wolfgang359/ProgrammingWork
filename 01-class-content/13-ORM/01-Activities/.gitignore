@@ -1,0 +1,78 @@
+#01-Ins_Sequelize-Setup
+#02-Stu_Sequelize-Setup
+#02-Stu_Sequelize-Setup/Solved
+#03-Ins_Models
+#04-Stu_Models
+#04-Stu_Models/Solved
+#05-Ins_Create
+#06-Stu_Create-Read
+#06-Stu_Create-Read/Solved
+#07-Ins_Update-Delete
+#08-Stu_Update-Delete
+#08-Stu_Update-Delete/Solved
+#09-Ins_Async-Await
+#10-Stu_Async-Await
+#10-Stu_Async-Await/Solved
+#11-Ins_RESTful-Routes
+# 11-Ins_RESTful-Routes/config
+# 11-Ins_RESTful-Routes/db
+# 11-Ins_RESTful-Routes/models
+# 11-Ins_RESTful-Routes/routes
+# 12-Stu_RESTful-Routes
+# 12-Stu_RESTful-Routes/Solved
+# 13-Ins_Validation
+# 13-Ins_Validation/config
+# 13-Ins_Validation/db
+# 13-Ins_Validation/models
+# 13-Ins_Validation/routes
+# 14-Stu_Validation
+# 14-Stu_Validation/Solved
+# 15-Ins_Password-Hashing
+# 15-Ins_Password-Hashing/config
+# 15-Ins_Password-Hashing/db
+# 15-Ins_Password-Hashing/models
+# 15-Ins_Password-Hashing/routes
+# 16-Stu_Password-Hashing
+# 16-Stu_Password-Hashing/Solved
+# 17-Ins_Hooks
+# 17-Ins_Hooks/config
+# 17-Ins_Hooks/db
+# 17-Ins_Hooks/models
+# 17-Ins_Hooks/routes
+# 18-Stu_Hooks
+# 18-Stu_Hooks/Solved
+# 19-Ins_Instance-Method
+# 19-Ins_Instance-Method/config
+# 19-Ins_Instance-Method/db
+# 19-Ins_Instance-Method/models
+# 19-Ins_Instance-Method/routes
+# 20-Stu_Instance-Method
+# 20-Stu_Instance-Method/Solved
+# 21-Ins_One-to-One
+# 21-Ins_One-to-One/config
+# 21-Ins_One-to-One/db
+# 21-Ins_One-to-One/models
+# 21-Ins_One-to-One/seeds
+# 22-Stu_One-to-One
+# 22-Stu_One-to-One/Solved
+# 23-Ins_One-to-Many
+# 23-Ins_One-to-Many/config
+# 23-Ins_One-to-Many/db
+# 23-Ins_One-to-Many/models
+# 23-Ins_One-to-Many/routes
+# 23-Ins_One-to-Many/seeds
+# 24-Stu_One-to-Many
+# 24-Stu_One-to-Many/Solved
+# 25-Ins_Literals
+# 25-Ins_Literals/config
+# 25-Ins_Literals/db
+# 25-Ins_Literals/models
+# 25-Ins_Literals/routes
+# 25-Ins_Literals/seeds
+# 26-Stu_Literals
+# 26-Stu_Literals/Solved
+# 27-Evr_Eslint
+# 27-Evr_Eslint/Solved
+# 28-Stu_Mini-Project
+# 28-Stu_Mini-Project/Develop
+# 28-Stu_Mini-Project/Main
