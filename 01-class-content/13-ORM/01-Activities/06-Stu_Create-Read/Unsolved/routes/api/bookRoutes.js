@@ -1,30 +1,24 @@
 const router = require("express").Router();
 const Book = require("../../models/Book");
 
-// TODO: Add a comment describing the purpose of this route
 // Defines a home page (/api/books)...look at other file
 router.get("/", (req, res) => {
-	// TODO: Add a comment describing the functionality of this method
-	// reads all records and returns as an array and posts into res.json
+	// Reads all records and returns as an array and posts into res.json
 	Book.findAll().then((bookData) => {
 		res.json(bookData);
 	});
 });
 
-// TODO: Add a comment describing the purpose of this route
-// displays only paperbacks (look at the "where" line)
+// Displays only paperbacks (look at the "where" line)
 router.get("/paperbacks", (req, res) => {
 	Book.findAll({
-		// TODO: Add a comment describing the functionality of this property
-		// groups/sorts by title
+		// Groups/sorts by title
 		order: ["title"],
-		// TODO: Add a comment describing the functionality of this property
 		//
 		where: {
 			is_paperback: true,
 		},
 		attributes: {
-			// TODO: Add a comment describing the functionality of this property
 			//
 			exclude: ["is_paperback", "edition"],
 		},
@@ -33,10 +27,8 @@ router.get("/paperbacks", (req, res) => {
 	});
 });
 
-// TODO: Add a comment describing the purpose of this route
-// gets a single book
+// Gets a single book
 router.get("/:id", (req, res) => {
-	// TODO: Add a comment describing the functionality of this method
 	//
 	Book.findByPk(req.params.id).then((bookData) => {
 		res.json(bookData);

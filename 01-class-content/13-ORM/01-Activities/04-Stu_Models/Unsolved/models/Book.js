@@ -34,6 +34,7 @@ Book.init(
 		timestamps: false,
 		underscored: true,
 		modelName: "book",
+		// Prevent sequelize from renaming our table
 		freezeTableName: true,
 	}
 );
